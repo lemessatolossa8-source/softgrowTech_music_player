@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="player">
+            <!-- Header -->
+            <div class="header">
+                <h2>Now Playing</h2>
+            </div>
+
+            <!-- Cover Art -->
+            <div class="cover-wrapper">
+                <img src="" alt="Album Cover" id="cover" class="cover-art">
+            </div>
+
+            <!-- Track Info -->
+            <div class="track-info">
+                <h1 id="title">Song Title</h1>
+                <p id="artist">Artist Name</p>
+            </div>
+
+            <!-- Audio Element -->
+            <audio id="audio"></audio>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="btn action-btn" id="prev">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button class="btn action-btn big-btn" id="play">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="btn action-btn" id="next">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist-container">
+            <div class="playlist-header">
+                <h3><i class="fas fa-list"></i> Playlist</h3>
+            </div>
+            <ul id="playlist" class="playlist">
+                <!-- Playlist items will be populated by JS -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
